@@ -1,0 +1,19 @@
+development:
+  adapter: postgresql
+  encoding: unicode
+  database: sgfoods_development
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
+
+test:
+  adapter: postgresql
+  encoding: unicode
+  database: sgfoods_test<%= ENV['TEST_ENV_NUMBER'].to_i < 2 ? '1' : ENV['TEST_ENV_NUMBER'] %>
+  pool: 5
+  username: postgres
+  password: postgres
+  host: localhost
+  port: 5432
