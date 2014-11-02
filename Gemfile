@@ -42,3 +42,5 @@ gem 'spring',        group: :development
 gem 'therubyracer'
 
 gem 'twitter-bootstrap-rails', :git => 'git://github.com/seyhunak/twitter-bootstrap-rails.git'
+
+gem 'devise'
